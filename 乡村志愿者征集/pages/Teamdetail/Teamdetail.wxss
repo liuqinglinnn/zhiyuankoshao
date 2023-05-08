@@ -1,0 +1,331 @@
+page {
+  background-color: #f5f5f5;
+}
+.swiper {
+  height: 500rpx;
+  width: 100%;
+  background-color: white;
+}
+.swiper .swiperimg {
+  height: 500rpx;
+  width: 100%;
+}
+.border1 {
+  width: 100%;
+  height: 4rpx;
+  background-color: #b7b7b7;
+}
+.border2 {
+  width: 100%;
+  height: 2rpx;
+  background-color: white;
+}
+.border2 .line {
+  width: 90%;
+  height: 2rpx;
+  background-color: #b7b7b7;
+  margin-left: 5%;
+}
+.border3 {
+  width: 100%;
+  height: 3rpx;
+  background-color: #b7b7b7;
+}
+.title {
+  width: 100%;
+  height: 200rpx;
+  background-color: white;
+}
+.title .titlehead {
+  margin-left: 30rpx;
+  padding-top: 30rpx;
+  font-size: 40rpx;
+  font-weight: bold;
+}
+.title .titlemechanism {
+  margin-left: 30rpx;
+  margin-top: 30rpx;
+  font-size: 30rpx;
+  margin-bottom: 20rpx;
+  opacity: 0.7;
+}
+.time {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100rpx;
+  background-color: white;
+}
+.time .timeimg {
+  width: 50rpx;
+  height: 50rpx;
+  margin-left: 5%;
+}
+.time .timetext {
+  font-size: 30rpx;
+  margin-left: 20rpx;
+  opacity: 0.7;
+}
+.address {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100rpx;
+  background-color: white;
+}
+.address .addressimg {
+  width: 50rpx;
+  height: 50rpx;
+  margin-left: 5%;
+}
+.address .addresstext {
+  width: 80%;
+  font-size: 30rpx;
+  margin-left: 20rpx;
+  opacity: 0.7;
+}
+.classify {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100rpx;
+  background-color: white;
+}
+.classify .classifyimg {
+  width: 50rpx;
+  height: 50rpx;
+  margin-left: 5%;
+}
+.classify .classifytext {
+  font-size: 30rpx;
+  margin-left: 20rpx;
+  opacity: 0.7;
+}
+.sponsor {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100rpx;
+  background-color: white;
+}
+.sponsor .sponsorimg {
+  width: 50rpx;
+  height: 50rpx;
+  margin-left: 5%;
+}
+.sponsor .sponsortext {
+  font-size: 30rpx;
+  margin-left: 20rpx;
+  opacity: 0.7;
+}
+.sponsor .showsponsor {
+  position: absolute;
+  width: 30rpx;
+  height: 30rpx;
+  right: 50rpx;
+}
+.content {
+  height: 500rpx;
+  background-color: white;
+}
+.content .content_ {
+  height: 100rpx;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.content .content_ .contentimg {
+  width: 50rpx;
+  height: 50rpx;
+  margin-left: 5%;
+}
+.content .content_ .contenttext {
+  font-size: 30rpx;
+  margin-left: 20rpx;
+  opacity: 0.7;
+}
+.content .contentdetail {
+  height: 400rpx;
+  width: 90%;
+  margin-left: 5%;
+}
+.team {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding-bottom: 150rpx;
+}
+.team .t {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100rpx;
+  background-color: white;
+}
+.team .t .timg {
+  width: 50rpx;
+  height: 50rpx;
+  margin-left: 5%;
+}
+.team .t .ttext {
+  font-size: 30rpx;
+  margin-left: 20rpx;
+}
+.team .t .enterqunliao {
+  position: absolute;
+  right: 50rpx;
+  width: 150rpx;
+  height: 200rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.team .t .enterqunliao .enterqunliao_ {
+  width: 150rpx;
+  height: 75rpx;
+  border: 5rpx solid #3ab54a;
+  background-color: #3ab54a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15rpx;
+  color: white;
+}
+.team .team_ .team_for {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  height: 500rpx;
+  margin-left: 5%;
+  padding-top: 20rpx;
+  border-top: 2rpx solid #b7b7b7;
+  border-bottom: 2rpx solid #b7b7b7;
+}
+.team .team_ .team_for .team_img {
+  margin-top: 10rpx;
+  display: flex;
+  flex-direction: row;
+  width: 150rpx;
+}
+.team .team_ .team_for .team_img .userbase {
+  width: 100rpx;
+  height: 150rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.team .team_ .team_for .team_img .userbase .team_f {
+  width: 100rpx;
+  height: 100rpx;
+}
+.team .team_ .team_for .team_img .userbase .team_f .team_forimg_ {
+  border-radius: 10rpx;
+  width: 100rpx;
+  height: 100rpx;
+}
+.team .team_ .team_for .team_img .userbase .team_t {
+  margin-top: 10rpx;
+  font-size: 30rpx;
+  opacity: 0.7;
+}
+.team .addnew {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100rpx;
+  margin-left: 5%;
+  border-top: 2rpx solid #b7b7b7;
+  border-bottom: 2rpx solid #b7b7b7;
+}
+.team .addnew .addnew_text {
+  font-size: 30rpx;
+  margin-left: 25rpx;
+  opacity: 0.7;
+  width: 140rpx;
+}
+.team .addnew .addnew_img {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  transform: translateX(50rpx);
+  background-color: antiquewhite;
+  border-radius: 50%;
+  overflow: hidden;
+  width: 70rpx;
+  height: 70rpx;
+}
+.team .addnew .addnew_img .addnew_imgone {
+  width: 70rpx;
+  height: 70rpx;
+}
+.team .addnew .addbuttom {
+  height: 75rpx;
+  position: absolute;
+  right: 50rpx;
+  width: 175rpx;
+  border-radius: 50rpx;
+  background-color: #3ab54a;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.buttom {
+  position: fixed;
+  bottom: 0rpx;
+  height: 150rpx;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  align-items: center;
+  border-top: 2rpx solid #b7b7b7;
+}
+.buttom .one {
+  width: 70%;
+  height: 100rpx;
+  text-align: center;
+  border-right: 2rpx solid #b7b7b7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.buttom .one .onetext {
+  width: 400rpx;
+  height: 75rpx;
+  border: 5rpx solid #6c99be;
+  background-color: #6c99be;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15rpx;
+  color: white;
+}
+.buttom .two {
+  width: 30%;
+  height: 100rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-left: 2rpx solid #b7b7b7;
+}
+.buttom .two .twotext {
+  width: 150rpx;
+  height: 75rpx;
+  border: 5rpx solid #3ab54a;
+  background-color: #3ab54a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15rpx;
+  color: white;
+}

@@ -1,0 +1,57 @@
+<swiper class="swiper" indicator-dots="{{dots}}" autoplay="true" current="0" interval="5000" duration="1000"
+    circular="true" previous-margin="50rpx" next-margin="50rpx" bindchange="swiperBindchange">
+    <block wx:for="{{5}}" wx:for-index="idx">
+        <swiper-item>
+            <view class="card {{currentSwiperIndex == idx ? 'zoom-in' : 'zoom-out'}}">
+                <view class="left">
+                    <view class="left_one" hover-class="none" hover-stop-propagation="false">
+                        <view class="tt">
+                            志愿等级
+                        </view>
+                        <view class="left_img" hover-class="none" hover-stop-propagation="false">
+                            <image class="left_img_" src="{{levarr[idx].src2}}" mode="aspectFill">
+
+                            </image>
+                        </view>
+                    </view>
+                    <view class="left_two">
+                      志愿口哨，集结出发
+                    </view>
+                </view>
+                <view class="right">
+                    <image class="right_img" src="{{levarr[currentSwiperIndex].src}}" mode="aspectFill">
+
+                    </image>
+                </view>
+            </view>
+        </swiper-item>
+    </block>
+</swiper>
+<view class="shop">
+    <view class="lev">
+        <view class="head">
+            <image class="head1" src="/icon/dengjiquanyi.png" mode="aspectFill">
+
+            </image>
+            <view class="text">
+                等级权益
+            </view>
+        </view>
+        <view class="body">
+            志愿币获取速率提升至{{levarr[currentSwiperIndex].rate}}
+        </view>
+    </view>
+    <view class="lev">
+        <view class="head">
+            <image class="head1" src="/icon/jiesuotiaojian.png" mode="aspectFill">
+
+            </image>
+            <view class="text">
+                解锁条件
+            </view>
+        </view>
+        <view class="body">
+            累计参与志愿活动{{levarr[currentSwiperIndex].tiaojian}}小时
+        </view>
+    </view>
+</view>

@@ -1,0 +1,84 @@
+<view class="qiandao">
+    <image wx:if="{{pan==0}}" class="qiandaopic" src="{{picture0}}" mode="aspectFill">
+    </image>
+    <image wx:if="{{pan==1}}" class="qiandaopic" src="{{picture1}}" mode="aspectFill" bindtap="qiandao">
+    </image>
+    <image wx:if="{{pan==2}}" class="qiandaopic" src="{{picture2}}" mode="aspectFill" bindtap="qiantui">
+    </image>
+    <image wx:if="{{pan==3}}" class="qiandaopic" src="{{picture3}}" mode="aspectFill">
+    </image>
+    <image wx:if="{{pan==4}}" class="qiandaopic" src="{{picture4}}" mode="aspectFill">
+    </image>
+</view>
+<view class="title" hover-class="none" hover-stop-propagation="false">
+    <view class="titlehead" hover-class="none" hover-stop-propagation="false">
+        {{activity.head}}
+    </view>
+    <view class="titlemechanism" hover-class="none" hover-stop-propagation="false">
+        {{activity.mechanism}}
+    </view>
+</view>
+<view class="border1">
+
+</view>
+<view class="time">
+    <image class="timeimg" src="/icon/time2.png" mode="aspectFill">
+
+    </image>
+    <view class="timetext">
+        <view class="">
+            开始时间:{{activity.starttime}}
+        </view>
+        <view class="">
+            结束时间:{{activity.endtime}}
+        </view>
+    </view>
+</view>
+<view class="border2">
+    <view class="line">
+
+    </view>
+</view>
+<view class="address">
+    <image class="addressimg" src="/icon/place2.png" mode="aspectFill">
+
+    </image>
+    <view class="addresstext">
+        {{activity.placeactually}}
+    </view>
+</view>
+<view class="border2">
+    <view class="line">
+
+    </view>
+</view>
+<view class="classify">
+    <image class="classifyimg" src="/icon/classify2.png" mode="aspectFill">
+
+    </image>
+    <view class="classifytext">
+        {{activity.classify1}}
+    </view>
+</view>
+<view class="border2">
+    <view class="line">
+
+    </view>
+</view>
+<view class="sponsor" bindtap="chatsponsor">
+    <image class="sponsorimg" src="/icon/connect.png" mode="aspectFill">
+
+    </image>
+    <view class="sponsortext">
+        {{activity.realname}}
+    </view>
+    <view class="sponsortext">
+        {{activity.phonenum}}
+    </view>
+    <image class="showsponsor" src="/icon/arrow-right.png" style="opacity: 0.5;" mode="aspectFill">
+
+    </image>
+</view>
+<view class="border3">
+
+</view>

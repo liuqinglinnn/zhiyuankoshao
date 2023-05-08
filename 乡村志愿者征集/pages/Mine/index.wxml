@@ -1,0 +1,151 @@
+<view class="head">
+</view>
+<view class="body">
+    <view class="user" bindtap="Userlogin">
+        <view class="userpicture">
+            <image class="userpicture_img" src="{{userInfo.userpicture}}" mode="aspectFill">
+            </image>
+        </view>
+        <view class="userinfo">
+            <view class="username">
+                {{userInfo.username}}
+            </view>
+            <view class="userlevel">
+                <image class="userlevel_img" src="/icon/LV1.png" mode="">
+
+                </image>
+            </view>
+        </view>
+        <view class="usericon">
+            <image class="usericonpicture" src="/icon/right.png" mode="aspectFill">
+            </image>
+        </view>
+    </view>
+    <view class="operate_text">
+        常用操作
+    </view>
+    <view class="operate">
+        <view class="operateone" bindtap="Callforvolunteer">
+            <view class="operateone_text">
+                <view class="operateone_text_1">
+                    发布活动
+                </view>
+                <view class="operateone_text_2">
+                    发起志愿活动
+                </view>
+            </view>
+            <view class="operateone_icon">
+                <image class="operateone_image" src="/icon/fabu.png" mode="aspectFill">
+                </image>
+            </view>
+        </view>
+        <view class="operatetwo" bindtap="shenhe">
+            <view class="operatetwo_text">
+                <view class="operatetwo_text_1">
+                    报名审核
+                </view>
+                <view class="operatetwo_text_2">
+                    审核报名信息
+                </view>
+            </view>
+            <view class="operatetwo_icon">
+                <image class="operatetwo_image" src="/icon/baoming.png" mode="aspectFill">
+                </image>
+            </view>
+        </view>
+    </view>
+    <view class="button">
+        <view class="button1" bindtap="Organize">
+            <view class="button1_">
+                <image class="button1_icon" src="/icon/zuzhi.png" mode="aspectFill">
+                </image>
+            </view>
+            <view class="button1_text">
+                组织认证
+            </view>
+            <view class="button1_right">
+                <image class="button1_right_icon" src="/icon/right.png" mode="aspectFill">
+                </image>
+            </view>
+        </view>
+        <view class="border1">
+        </view>
+        <view class="button2" bindtap="UserInformation">
+            <view class="button2_">
+                <image class="button2_icon" src="/icon/geren.png" mode="aspectFill">
+                </image>
+            </view>
+            <view class="button2_text">
+                个人名片
+            </view>
+            <view class="button2_right">
+                <image class="button2_right_icon" src="/icon/right.png" mode="aspectFill">
+                </image>
+            </view>
+        </view>
+        <view class="border2">
+        </view>
+        <view class="button3" bindtap="wofabudehuodong">
+            <view class="button3_">
+                <image class="button3_icon" src="/icon/faqi.png" mode="aspectFill">
+                </image>
+            </view>
+            <view class="button3_text">
+                我发起的活动
+            </view>
+            <view class="button3_right">
+                <image class="button3_right_icon" src="/icon/right.png" mode="aspectFill">
+                </image>
+            </view>
+        </view>
+        <view class="border1">
+        </view>
+        <view class="button4" bindtap="huodong">
+            <view class="button4_">
+                <image class="button4_icon" src="/icon/zhaomu.png" mode="aspectFill">
+                </image>
+            </view>
+            <view class="button4_text">
+                我报名的活动
+            </view>
+            <view class="button4_right">
+                <image class="button4_right_icon" src="/icon/right.png" mode="aspectFill">
+                </image>
+            </view>
+        </view>
+        <view class="border2">
+        </view>
+        <view class="button5" bindtap="lianxi">
+            <view class="button5_">
+                <image class="button5_icon" src="/icon/lianxi.png" mode="aspectFill">
+                </image>
+            </view>
+            <view class="button5_text">
+                联系我们
+            </view>
+            <view class="button5_right">
+                <image class="button5_right_icon" src="/icon/right.png" mode="aspectFill">
+                </image>
+            </view>
+        </view>
+        <view class="border1">
+        </view>
+        <view class="button6" bindtap="tuichudenglu">
+            <view class="button6_">
+                <image class="button6_icon" src="/icon/tuichu.png" mode="aspectFill">
+                </image>
+            </view>
+            <view class="button6_text">
+                退出登录
+            </view>
+            <view class="button6_right">
+                <image class="button6_right_icon" src="/icon/right.png" mode="aspectFill">
+                </image>
+            </view>
+        </view>
+    </view>
+    <view class="logo">
+        <image class="logo_img" src="/icon/zhiyuankoshao.jpg" mode="aspectFit">
+        </image>
+    </view>
+</view>

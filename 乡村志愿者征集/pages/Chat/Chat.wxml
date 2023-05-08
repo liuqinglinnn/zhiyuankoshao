@@ -1,0 +1,48 @@
+<view class="message" style="height: {{scrollHeight}}">
+    <view class="message_" wx:for="{{message}}" wx:for-index="idx" wx:for-item="item" id="num{{idx}}">
+        <view class="he" wx:if="{{item.name1==oppositeuser.oppositeuserid}}">
+            <view class="message_he">
+                <image class="message_he_img" src="{{oppositeuser.oppositeuserpicture}}" mode="aspectFill">
+                </image>
+            </view>
+            <view class="message_he_mes">
+                <view class="message_he_mes_text">
+                    {{item.message}}
+                </view>
+            </view>
+        </view>
+        <view class="me" wx:if="{{item.name1==user.userid}}">
+            <view class="message_me_mes" wx:if="{{item.message.length<20}}">
+                <view class="message_me_mes_text">
+                    {{item.message}}
+                </view>
+            </view>
+            <view class="message_me_img" wx:if="{{item.message.length>20}}">
+                <image class="message_me_mes_img" src="{{item.message}}">
+                </image>
+            </view>
+            <view class="message_me">
+                <image class="message_me_img" src="{{user.userpicture}}" mode="aspectFill">
+                </image>
+            </view>
+        </view>
+    </view>
+    <view class="" style="height:150rpx">
+
+    </view>
+</view>
+<view class="Input">
+    <view class="inputbutton">
+        <input class="inputbutton_" value="{{inputvalue}}" type="text" placeholder="输入聊天内容" bindinput="InputMessage">
+        </input>
+    </view>
+    <view class="wenjian">
+        <image class="wenjian_image" src="/icon/add.png" bindtap="fasongtupian" mode="aspectFill">
+        </image>
+    </view>
+    <view class="send" bindtap="sendMessage">
+        <view class="send_text">
+            发送
+        </view>
+    </view>
+</view>

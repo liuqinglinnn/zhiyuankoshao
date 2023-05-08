@@ -1,0 +1,321 @@
+page {
+    background-color: rgb(245, 245, 245);
+}
+
+.search {
+    width           : 100%;
+    height          : 100rpx;
+    display         : flex;
+    flex-direction  : row;
+    align-items     : center;
+    background-color: white;
+
+    .search_ {
+        background-color: rgb(245, 245, 245);
+        height          : 75rpx;
+        width           : 75%;
+        margin-left     : 50rpx;
+        border-radius   : 75rpx;
+        display         : flex;
+        flex-direction  : row;
+        align-items     : center;
+
+        .search_icon {
+            width      : 50rpx;
+            height     : 50rpx;
+            margin-left: 25rpx;
+        }
+
+        .search_input {
+            font-size  : 30rpx;
+            margin-left: 15rpx;
+
+        }
+
+    }
+
+    .cancel {
+        font-size  : 30rpx;
+        margin-left: 30rpx;
+        opacity    : 0.7;
+    }
+}
+
+.select {
+    width           : 100%;
+    height          : 100rpx;
+    display         : flex;
+    flex-direction  : row;
+    align-items     : center;
+    background-color: white;
+    justify-content : center;
+
+    .select1 {
+        display        : flex;
+        flex-direction : row;
+        align-items    : center;
+        justify-content: center;
+
+        width: 33%;
+
+        .text1 {
+            opacity  : 0.7;
+            font-size: 30rpx;
+        }
+    }
+
+    .select2 {
+        display        : flex;
+        flex-direction : row;
+        align-items    : center;
+        justify-content: center;
+
+        width: 33%;
+
+        .text2 {
+            opacity  : 0.7;
+            font-size: 30rpx;
+        }
+    }
+
+    .select3 {
+        display        : flex;
+        flex-direction : row;
+        align-items    : center;
+        justify-content: center;
+
+        width: 33%;
+
+        .text3 {
+            opacity  : 0.7;
+            font-size: 30rpx;
+        }
+    }
+}
+
+.showmap {
+    width           : 100%;
+    height          : 75rpx;
+    display         : flex;
+    flex-direction  : row;
+    align-items     : center;
+    background-color: white;
+    justify-content : center;
+    border-top      : 2rpx solid rgb(245, 245, 245);
+    border-bottom   : 2rpx solid rgb(245, 245, 245);
+
+    .showmaptext {
+        opacity  : 0.5;
+        font-size: 30rpx;
+    }
+
+}
+
+.icon {
+    width      : 30rpx;
+    height     : 30rpx;
+    margin-left: 10rpx;
+}
+
+.map {
+    width : 100%;
+    height: 400rpx;
+
+    .map_ {
+        height: 100%;
+        width : 100%;
+    }
+}
+
+.activitylist {
+    width: 100%;
+
+    .activitylistfor {
+        width           : 95%;
+        height          : 250rpx;
+        background-color: white;
+        margin-right    : 2.5%;
+        margin-left     : 2.5%;
+        margin-top      : 25rpx;
+        border-radius   : 15rpx;
+        box-shadow      : 3rpx 3rpx 8rpx 2rpx #c8c3c3;
+
+        .activitylistforitem {
+            width         : 100%;
+            height        : 100%;
+            display       : flex;
+            flex-direction: row;
+            align-items   : center;
+
+            .pic {
+                width        : 210rpx;
+                height       : 210rpx;
+                margin-left  : 30rpx;
+                border-radius: 15rpx;
+                overflow     : hidden;
+
+                .pic_img {
+                    width           : 210rpx;
+                    height          : 210rpx;
+                    background-color: antiquewhite;
+                }
+            }
+
+            .nav {
+                position: absolute;
+                right   : 50rpx;
+                width   : 50rpx;
+                height  : 50rpx;
+
+                .nav_icon {
+                    width : 50rpx;
+                    height: 50rpx;
+                }
+            }
+
+            .detail {
+                margin-left    : 25rpx;
+                display        : flex;
+                flex-direction : column;
+                height         : 210rpx;
+                justify-content: center;
+
+                .hh {
+                    display        : flex;
+                   
+                    flex-direction : row;
+                    align-items    : center;
+
+                    .head {
+                        font-size: 35rpx;
+                    }
+
+                    .mode {
+                        position     : absolute;
+                        right        : 75rpx;
+                        width        : 75rpx;
+                        height       : 35rpx;
+                        font-size    : 25rpx;
+                        border       : 5rpx solid antiquewhite;
+                        border-radius: 15rpx;
+                        opacity      : 0.5;
+                        text-align   : center;
+                    }
+                }
+
+
+                .other {
+                    margin-top    : 10rpx;
+                    flex-direction: column;
+                    display       : flex;
+
+                    .place {
+                        display       : flex;
+                        flex-direction: row;
+                        font-size     : 25rpx;
+                        align-items   : center;
+
+                        .placetext {
+                            opacity    : 0.7;
+                            margin-left: 15rpx;
+                        }
+                    }
+
+                    .time {
+                        margin-top    : 5rpx;
+                        display       : flex;
+                        flex-direction: row;
+                        font-size     : 25rpx;
+                        align-items   : center;
+
+                        .timetext {
+                            opacity    : 0.7;
+                            margin-left: 15rpx;
+                        }
+                    }
+
+                    .num {
+                        margin-top    : 5rpx;
+                        display       : flex;
+                        flex-direction: row;
+                        font-size     : 25rpx;
+                        align-items   : center;
+
+                        .numtext {
+                            opacity    : 0.7;
+                            margin-left: 15rpx;
+                        }
+                    }
+
+                    .classify {
+                        margin-top    : 5rpx;
+                        display       : flex;
+                        flex-direction: row;
+                        font-size     : 25rpx;
+                        align-items   : center;
+
+                        .classifytext {
+                            opacity    : 0.7;
+                            margin-left: 15rpx;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+.acticon {
+    width : 30rpx;
+    height: 30rpx;
+}
+
+.calssify2 {
+    position        : absolute;
+    top             : 180rpx;
+    height          : auto;
+    width           : 33%;
+    margin-left     : 31%;
+    background-color: white;
+    box-shadow      : 3rpx 3rpx 8rpx 2rpx #c8c3c3;
+    border-radius   : 15rpx;
+    display         : flex;
+    flex-direction  : column;
+    justify-content : center;
+
+    .calssify2text {
+        width          : 100%;
+        text-align     : center;
+        font-size      : 30rpx;
+        justify-content: center;
+        align-items    : center;
+        margin-top     : 7.5rpx;
+        margin-bottom  : 7.5rpx;
+    }
+}
+
+.calssify3 {
+    position        : absolute;
+    top             : 180rpx;
+    height          : auto;
+    width           : 33%;
+    margin-left     : 66%;
+    background-color: white;
+    box-shadow      : 3rpx 3rpx 8rpx 2rpx #c8c3c3;
+    border-radius   : 15rpx;
+    display         : flex;
+    flex-direction  : column;
+    justify-content : center;
+
+    .calssify3text {
+        width          : 100%;
+        text-align     : center;
+        font-size      : 30rpx;
+        justify-content: center;
+        align-items    : center;
+        margin-top     : 7.5rpx;
+        margin-bottom  : 7.5rpx;
+    }
+}

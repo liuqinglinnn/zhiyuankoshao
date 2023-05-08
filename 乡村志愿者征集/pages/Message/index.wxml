@@ -1,0 +1,26 @@
+<view class="chat">
+    <view class="chatfor" wx:for="{{allcharuser}}" wx:for-index="idx" wx:for-item="item" bindtap="chat"
+        data-username="{{item.oid}}">
+        <view class="ueserpic">
+            <image class="ueserpic_img" src="{{item.picture}}" mode="aspectFill">
+            </image>
+        </view>
+        <view class="num" wx:if="{{item.unreadnum>0}}">
+            {{item.unreadnum}}
+        </view>
+        <view class="base">
+            <view class="basename">
+                {{item.name}}
+            </view>
+            <view class="basecontent">
+                {{item.content}}
+            </view>
+        </view>
+        <view class="time">
+            {{item.time}}
+        </view>
+    </view>
+</view>
+<view class="end">
+    无更多消息
+</view>

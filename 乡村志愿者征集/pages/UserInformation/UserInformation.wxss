@@ -1,0 +1,90 @@
+page {
+  background-color: #f5f5f5;
+}
+.wii {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.wii .imagebac {
+  width: 720rpx;
+  height: 540rpx;
+  margin-top: 50rpx;
+  border-radius: 25rpx;
+  border: 1rpx solid white;
+}
+.wii .card {
+  position: absolute;
+  top: 50rpx;
+  width: 720rpx;
+  height: 540rpx;
+  border-radius: 25rpx;
+  border: 1rpx solid white;
+  display: flex;
+  flex-direction: row;
+}
+.wii .card .left {
+  width: 60%;
+  margin-top: 75rpx;
+  margin-left: 30rpx;
+}
+.wii .card .left .top {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.wii .card .left .top .text {
+  font-size: 40rpx;
+  margin-left: 5rpx;
+  font-weight: bolder;
+}
+.wii .card .left .top .image {
+  width: 100rpx;
+  height: 100rpx;
+}
+.wii .card .left .other {
+  margin-top: 40rpx;
+  display: flex;
+  flex-direction: column;
+}
+.wii .card .left .other .tt {
+  font-size: 37rpx;
+  font-weight: bold;
+  margin-top: 15rpx;
+  margin-left: 15rpx;
+}
+.wii .card .left .other .title_input {
+  font-size: 30rpx;
+  margin-top: 15rpx;
+  margin-left: 15rpx;
+}
+.wii .card .right {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.wii .card .right .Logo {
+  width: 250rpx;
+  height: 250rpx;
+}
+.wii .xia {
+  margin-top: 30rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.wii .xia .quanxian {
+  font-size: 25rpx;
+  display: flex;
+  flex-direction: row;
+}
+.wii .xia .quanxian .one {
+  width: 50rpx;
+  height: 50rpx;
+}
+.wii .xia .xialogo {
+  width: 250rpx;
+  height: 100rpx;
+}

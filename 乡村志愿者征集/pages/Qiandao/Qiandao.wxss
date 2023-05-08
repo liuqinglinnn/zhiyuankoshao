@@ -1,0 +1,133 @@
+page {
+  background-color: #f5f5f5;
+}
+.qiandao {
+  height: 700rpx;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.qiandao .qiandaopic {
+  width: 500rpx;
+  height: 500rpx;
+}
+.border1 {
+  width: 100%;
+  height: 4rpx;
+  background-color: #b7b7b7;
+}
+.border2 {
+  width: 100%;
+  height: 2rpx;
+  background-color: white;
+}
+.border2 .line {
+  width: 90%;
+  height: 2rpx;
+  background-color: #b7b7b7;
+  margin-left: 5%;
+}
+.border3 {
+  width: 100%;
+  height: 3rpx;
+  background-color: #b7b7b7;
+}
+.title {
+  width: 100%;
+  height: 200rpx;
+  background-color: white;
+}
+.title .titlehead {
+  margin-left: 30rpx;
+  padding-top: 30rpx;
+  font-size: 40rpx;
+  font-weight: bold;
+}
+.title .titlemechanism {
+  margin-left: 30rpx;
+  margin-top: 30rpx;
+  font-size: 30rpx;
+  margin-bottom: 20rpx;
+  opacity: 0.7;
+}
+.time {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100rpx;
+  background-color: white;
+}
+.time .timeimg {
+  width: 50rpx;
+  height: 50rpx;
+  margin-left: 5%;
+}
+.time .timetext {
+  font-size: 30rpx;
+  margin-left: 20rpx;
+  opacity: 0.7;
+}
+.address {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100rpx;
+  background-color: white;
+}
+.address .addressimg {
+  width: 50rpx;
+  height: 50rpx;
+  margin-left: 5%;
+}
+.address .addresstext {
+  width: 80%;
+  font-size: 30rpx;
+  margin-left: 20rpx;
+  opacity: 0.7;
+}
+.classify {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100rpx;
+  background-color: white;
+}
+.classify .classifyimg {
+  width: 50rpx;
+  height: 50rpx;
+  margin-left: 5%;
+}
+.classify .classifytext {
+  font-size: 30rpx;
+  margin-left: 20rpx;
+  opacity: 0.7;
+}
+.sponsor {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100rpx;
+  background-color: white;
+}
+.sponsor .sponsorimg {
+  width: 50rpx;
+  height: 50rpx;
+  margin-left: 5%;
+}
+.sponsor .sponsortext {
+  font-size: 30rpx;
+  margin-left: 20rpx;
+  opacity: 0.7;
+}
+.sponsor .showsponsor {
+  position: absolute;
+  width: 30rpx;
+  height: 30rpx;
+  right: 50rpx;
+}

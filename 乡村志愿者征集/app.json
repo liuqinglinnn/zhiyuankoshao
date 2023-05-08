@@ -1,0 +1,63 @@
+{
+    "pages": [
+        "pages/Head/index",  
+        "pages/Message/index",
+        "pages/Mine/index",
+        "pages/UserInformation/UserInformation",
+        "pages/Callforvolunteers/Callforvolunteers",
+        "pages/Chat/Chat",
+        "pages/MyActivity/MyActivity",
+        "pages/Activitylist/Activitylist",
+        "pages/Activitydetail/Activitydetail",
+        "pages/UserOrganize/UserOrganize",
+        "pages/Shoplist/Shoplist",
+        "pages/Qiandao/Qiandao",
+        "pages/Level/Level",
+        "pages/Team/Team",
+        "pages/Teamdetail/Teamdetail",
+        "pages/Qunliao/Qunliao",
+        "pages/Shenhe/Shenhe",
+        "pages/Gonglue/Gonglue",
+        "pages/Fabudehuodong/Fabudehuodong",
+        "pages/Fabuguanli/Fabuguanli",
+        "pages/Yinsi/Yinsi"
+    ],
+    "permission": {
+        "scope.userLocation": {
+            "desc": "你的位置信息将用于小程序位置接口的效果展示"
+        }
+    },
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#0cca80",
+        "navigationBarTitleText": "志愿口哨",
+        "navigationBarTextStyle": "white",
+        "onReachBottomDistance": 100
+    },
+    "tabBar": {
+        "list": [
+            {
+                "pagePath": "pages/Head/index",
+                "text": "首页",
+                "iconPath": "icon/koshao1.png",
+                "selectedIconPath": "icon/koshao2.png"
+            },
+            {
+                "pagePath": "pages/Message/index",
+                "text": "消息",
+                "iconPath": "icon/xiaoxi1.png",
+                "selectedIconPath": "icon/xiaoxi2.png"
+            },
+            {
+                "pagePath": "pages/Mine/index",
+                "text": "我的",
+                "iconPath": "icon/wode1.png",
+                "selectedIconPath": "icon/wode2.png"
+            }
+        ],
+        "color": "#696969",
+        "selectedColor": "#0cca80"
+    },
+    "style": "v2",
+    "sitemapLocation": "sitemap.json"
+}

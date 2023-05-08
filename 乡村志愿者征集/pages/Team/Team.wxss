@@ -1,0 +1,251 @@
+page {
+  background-color: #f5f5f5;
+}
+.showmap {
+  width: 100%;
+  height: 75rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: white;
+  justify-content: center;
+  border-top: 2rpx solid #f5f5f5;
+  border-bottom: 2rpx solid #f5f5f5;
+}
+.showmap .showmaptext {
+  opacity: 0.5;
+  font-size: 30rpx;
+}
+.icon {
+  width: 30rpx;
+  height: 30rpx;
+  margin-left: 10rpx;
+}
+.map {
+  width: 100%;
+  height: 400rpx;
+}
+.map .map_ {
+  height: 100%;
+  width: 100%;
+}
+.activitylist {
+  width: 100%;
+}
+.activitylist .activitylistfor {
+  width: 95%;
+  height: 325rpx;
+  background-color: white;
+  margin-right: 2.5%;
+  margin-left: 2.5%;
+  margin-top: 25rpx;
+  border-radius: 15rpx;
+  box-shadow: 3rpx 3rpx 8rpx 2rpx #c8c3c3;
+}
+.activitylist .activitylistfor .activitylistforitem {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.activitylist .activitylistfor .activitylistforitem .one {
+  width: 100%;
+  height: 200rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.activitylist .activitylistfor .activitylistforitem .one .pic {
+  width: 200rpx;
+  height: 150rpx;
+  margin-left: 30rpx;
+  border-radius: 15rpx;
+  overflow: hidden;
+}
+.activitylist .activitylistfor .activitylistforitem .one .pic .pic_img {
+  width: 210rpx;
+  height: 210rpx;
+  background-color: antiquewhite;
+}
+.activitylist .activitylistfor .activitylistforitem .one .nav {
+  position: absolute;
+  right: 50rpx;
+  width: 50rpx;
+  height: 50rpx;
+}
+.activitylist .activitylistfor .activitylistforitem .one .nav .nav_icon {
+  width: 50rpx;
+  height: 50rpx;
+}
+.activitylist .activitylistfor .activitylistforitem .one .detail {
+  margin-left: 25rpx;
+  display: flex;
+  flex-direction: column;
+  height: 200rpx;
+  justify-content: center;
+}
+.activitylist .activitylistfor .activitylistforitem .one .detail .head {
+  font-size: 35rpx;
+}
+.activitylist .activitylistfor .activitylistforitem .one .detail .other {
+  margin-top: 10rpx;
+  flex-direction: column;
+  display: flex;
+}
+.activitylist .activitylistfor .activitylistforitem .one .detail .other .place {
+  display: flex;
+  flex-direction: row;
+  font-size: 25rpx;
+  align-items: center;
+}
+.activitylist .activitylistfor .activitylistforitem .one .detail .other .place .placetext {
+  opacity: 0.7;
+  margin-left: 15rpx;
+}
+.activitylist .activitylistfor .activitylistforitem .one .detail .other .time {
+  margin-top: 5rpx;
+  display: flex;
+  flex-direction: row;
+  font-size: 25rpx;
+  align-items: center;
+}
+.activitylist .activitylistfor .activitylistforitem .one .detail .other .time .timetext {
+  opacity: 0.7;
+  margin-left: 15rpx;
+}
+.activitylist .activitylistfor .activitylistforitem .one .detail .other .classify {
+  margin-top: 5rpx;
+  display: flex;
+  flex-direction: row;
+  font-size: 25rpx;
+  align-items: center;
+}
+.activitylist .activitylistfor .activitylistforitem .one .detail .other .classify .classifytext {
+  opacity: 0.7;
+  margin-left: 15rpx;
+}
+.activitylist .activitylistfor .activitylistforitem .two {
+  width: 100%;
+  height: 125rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.activitylist .activitylistfor .activitylistforitem .two .team_ {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.activitylist .activitylistfor .activitylistforitem .two .team_ .team_for {
+  height: 100%;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100rpx;
+  margin-left: 5%;
+  border-top: 2rpx solid #b7b7b7;
+  padding-top: 10rpx;
+}
+.activitylist .activitylistfor .activitylistforitem .two .team_ .team_for .team_text {
+  font-size: 30rpx;
+  margin-left: 25rpx;
+  opacity: 0.7;
+  width: 140rpx;
+}
+.activitylist .activitylistfor .activitylistforitem .two .team_ .team_for .team_img {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  width: 250rpx;
+  height: 70rpx;
+}
+.activitylist .activitylistfor .activitylistforitem .two .team_ .team_for .team_img .team_forimg {
+  position: relative;
+  width: 50rpx;
+  box-sizing: border-box;
+  margin-top: -5rpx;
+}
+.activitylist .activitylistfor .activitylistforitem .two .team_ .team_for .team_img .team_forimg .team_forimg_ {
+  background-color: antiquewhite;
+  border-radius: 50%;
+  overflow: hidden;
+  width: 70rpx;
+  height: 70rpx;
+  border: 2rpx solid #b7b7b7;
+}
+.activitylist .activitylistfor .activitylistforitem .two .team_ .team_for .team_img .team_forimgother {
+  position: relative;
+  width: 70rpx;
+  height: 70rpx;
+  background-color: antiquewhite;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2rpx solid #b7b7b7;
+  margin-top: -5rpx;
+}
+.activitylist .activitylistfor .activitylistforitem .two .team_ .team_for .teambuttom {
+  font-size: 30rpx;
+  height: 75rpx;
+  position: absolute;
+  right: 50rpx;
+  width: 220rpx;
+  border-radius: 50rpx;
+  background-color: #3ab54a;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.acticon {
+  width: 30rpx;
+  height: 30rpx;
+}
+.calssify2 {
+  position: absolute;
+  top: 180rpx;
+  height: auto;
+  width: 33%;
+  margin-left: 31%;
+  background-color: white;
+  box-shadow: 3rpx 3rpx 8rpx 2rpx #c8c3c3;
+  border-radius: 15rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.calssify2 .calssify2text {
+  width: 100%;
+  text-align: center;
+  font-size: 30rpx;
+  justify-content: center;
+  align-items: center;
+  margin-top: 7.5rpx;
+  margin-bottom: 7.5rpx;
+}
+.calssify3 {
+  position: absolute;
+  top: 180rpx;
+  height: auto;
+  width: 33%;
+  margin-left: 66%;
+  background-color: white;
+  box-shadow: 3rpx 3rpx 8rpx 2rpx #c8c3c3;
+  border-radius: 15rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.calssify3 .calssify3text {
+  width: 100%;
+  text-align: center;
+  font-size: 30rpx;
+  justify-content: center;
+  align-items: center;
+  margin-top: 7.5rpx;
+  margin-bottom: 7.5rpx;
+}

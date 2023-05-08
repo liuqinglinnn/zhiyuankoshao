@@ -1,0 +1,96 @@
+<view class="head" hover-class="none" hover-stop-propagation="false">
+    机构认证：认证后可获得发布活动、管理活动的权限
+</view>
+
+<view class="top">
+    <view class="topone">
+        <view class="topone_">
+            <image class="topone_img" src="/icon/oyes.png" mode="aspectFill">
+            </image>
+        </view>
+        <view class="topone_text">
+            认证流程
+        </view>
+    </view>
+    <view class="toptwo">
+        <view class="t">
+            填写信息
+        </view>
+        <view class="img">
+            →
+        </view>
+        <view class="t">
+            提交审核
+        </view>
+        <view class="img">
+            →
+        </view>
+        <view class="t">
+            工作人员确认
+        </view>
+        <view class="img">
+            →
+        </view>
+        <view class="t">
+            审核通过
+        </view>
+    </view>
+</view>
+<view class="biankuang">
+    <view class="title">
+        <image class="imgicon" src="/icon/ostar.png" mode="aspectFill">
+        </image>
+        <view class="title_text">
+            机构名称
+        </view>
+        <input class="title_input" value="{{Name}}" type="text" placeholder="机构名称" maxlength="50" bindinput="InputValue"
+            data-data="name">
+        </input>
+    </view>
+    <view class="border"></view>
+    <view class="mode">
+        <image class="imgicon" src="/icon/oclassify.png" mode="aspectFill">
+        </image>
+        <view class="mode_text">
+            机构类型
+        </view>
+        <picker class="mode_picker" bindchange="ClassifyChange" value="{{index1}}" range="{{classifyarray}}">
+            {{classifyarray[index1]}}
+        </picker>
+    </view>
+    <view class="border"></view>
+    <view class="title">
+        <image class="imgicon" src="/icon/oaddress.png" mode="aspectFill">
+        </image>
+        <view class="title_text">
+            机构地址
+        </view>
+        <input class="title_input" value="{{address}}" type="text" placeholder="机构地址" maxlength="255"
+            bindinput="InputValue" data-data="address">
+        </input>
+    </view>
+    <view class="border"></view>
+    <view class="content">
+        <view class="content_" hover-class="none" hover-stop-propagation="false">
+            <image class="imgicon" src="/icon/oreason.png" mode="aspectFill">
+            </image>
+            <view class="content_text">
+                申请原因
+            </view>
+        </view>
+        <textarea class="content_input" value="{{reason}}" placeholder="请输入申请原因" maxlength="1000" auto-height="true"
+            bindinput="Reason" bindlinechange="%{15}">
+        </textarea>
+    </view>
+</view>
+<view class="end">
+    <view class="yes" bindtap="Submit">
+        <view>
+            提交审核
+        </view>
+    </view>
+</view>
+<view class="logo">
+    <image class="logo_img" src="/icon/zhiyuankoshao.jpg" mode="aspectFit">
+    </image>
+</view>

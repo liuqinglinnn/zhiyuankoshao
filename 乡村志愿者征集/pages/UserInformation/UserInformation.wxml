@@ -1,0 +1,171 @@
+<!-- <view class="biankuang">
+    <view class="title">
+        <view class="title_text">
+            姓名
+        </view>
+        <input class="title_input" value="{{Name}}" type="text" placeholder="请输入姓名" maxlength="50"
+            bindinput="InputValue" data-data="Name">
+        </input>
+    </view>
+    <view class="border"></view>
+    <view class="title">
+        <view class="title_text">
+            年龄
+        </view>
+        <input class="title_input" value="{{Age}}" type="number" placeholder="请输入年龄" maxlength="50"
+            bindinput="InputValue" data-data="Age">
+        </input>
+    </view>
+    <view class="border"></view>
+    <view class="mode">
+        <view class="mode_text">
+            性别
+        </view>
+        <picker class="mode_picker" bindchange="GenderChange" value="{{index3}}" range="{{GenderArray}}">
+            {{GenderArray[index3]}}
+        </picker>
+    </view>
+    <view class="border"></view>
+    <view class="mode">
+        <view class="mode_text">
+            生日
+        </view>
+        <picker class="mode_picker" mode="date" value="{{Birthdate}}" start="1922-01-01" end="2023-01-01"
+            bindchange="BirthdateChange">
+            {{Birthdate}}
+        </picker>
+    </view>
+    <view class="border"></view>
+    <view class="title">
+        <view class="title_text">
+            职业
+        </view>
+        <input class="title_input" type="text" placeholder="职业" placeholder-style="" bindinput="InputValue"
+            data-data="Profession">
+        </input>
+    </view>
+    <view class="border"></view>
+    <view class="mode">
+        <view class="mode_text">
+            地区
+        </view>
+        <picker class="mode_picker2" mode="region" value="{{Address}}" custom-item="{{customItem}}"
+            bindchange="AddressChange">
+            {{Address[0]}}-{{Address[1]}}-{{Address[2]}}
+        </picker>
+    </view>
+    <view class="border"></view>
+    <view class="title">
+        <view class="title_text">
+            详细地址
+        </view>
+        <input class="title_input" value="{{DetailAddress}}" type="text" placeholder="详细地址" maxlength="255"
+            bindinput="InputValue" data-data="DetailAddress">
+        </input>
+    </view>
+    <view class="title">
+        <view class="title_text">
+            身份证号
+        </view>
+        <input class="title_input" value="{{IDcard}}" type="text" placeholder="身份证号" placeholder-style=""
+            bindinput="InputValue" data-data="IDcard">
+        </input>
+    </view>
+    <view class="border"></view>
+    <view class="title">
+        <view class="title_text">
+            ⼿机号码
+        </view>
+        <input class="title_input" type="text" value="{{Telephone}}" placeholder="⼿机号码" bindinput="InputValue"
+            data-data="Telephone">
+        </input>
+    </view>
+    <view class="border"></view>
+    <view class="title">
+        <view class="title_text">
+            邮箱地址
+        </view>
+        <input class="title_input" type="text" placeholder="邮箱地址" bindinput="InputValue" data-data="Email">
+        </input>
+    </view>
+    <view class="border"></view>
+    <view class="mode">
+        <view class="mode_text">
+            政治⾯貌
+        </view>
+        <picker class="mode_picker" bindchange="PoliticsStatusChange" value="{{index1}}"
+            range="{{PoliticsStatusArray}}">
+            {{PoliticsStatusArray[index1]}}
+        </picker>
+    </view>
+    <view class="border"></view>
+    <view class="mode">
+        <view class="mode_text">
+            最⾼学历
+        </view>
+        <picker class="mode_picker" bindchange="EducationChange" value="{{index2}}" range="{{EducationArray}}">
+            {{EducationArray[index2]}}
+        </picker>
+    </view>
+</view>
+<view class="end">
+    <view class="save" bindtap="Updata">
+        <view>
+            修改
+        </view>
+    </view>
+    <view class="yes" bindtap="Submit">
+        <view>
+            上传
+        </view>
+    </view>
+</view> -->
+<view class="wii">
+    <image class="imagebac" src="{{picture}}">
+
+    </image>
+    <view class="card" style="background-image:url();">
+        <view class="left">
+            <view class="top">
+                <image class="image" src="/icon/volunteer.png">
+
+                </image>
+                <view class="text">
+                    志愿名片
+                </view>
+            </view>
+            <view class="other">
+                <view class="tt">
+                    昵称
+                </view>
+                <input class="title_input" value="{{Name}}" type="text" placeholder="请输入昵称" maxlength="50"
+                    bindinput="InputValue" data-data="Name" bindconfirm="Submit">
+                </input>
+                <view class="tt">
+                    联系方式
+                </view>
+                <input class="title_input" type="text" value="{{Telephone}}" placeholder="请输入联系方式"
+                    bindinput="InputValue" data-data="Telephone" bindconfirm="Submit">
+                </input>
+            </view>
+        </view>
+
+        <view class="right">
+            <image class="Logo" src="/icon/LOGO/three.png">
+
+            </image>
+        </view>
+    </view>
+    <view class="xia">
+        <view class="quanxian" hover-class="none" hover-stop-propagation="false">
+            <switch class="one" type="checkbox" style='zoom:0.7;' bindchange="switch"></switch>
+
+            <view class="two" bindtap="yinsizhence">
+                我已阅读并同意《用户服务协议》及《隐私政策》
+            </view>
+        </view>
+        <image class="xialogo" src="/icon/zhiyuankoshao.jpg">
+
+        </image>
+    </view>
+</view>

@@ -1,0 +1,179 @@
+<view class="biankuang">
+    <view class="title">
+        <view class="title_text">
+            商品名称
+        </view>
+        <input class="title_input" value="{{title}}" type="text" placeholder="请输入标题" maxlength="50"
+            bindinput="ActivityTitle">
+        </input>
+    </view>
+    <view class="border"></view>
+    <view class="starttime">
+        <view class="starttime_text">
+            开始时间
+        </view>
+        <view class="starttime_">
+            <picker class="starttime_date" mode="date" value="{{startdate}}" start="2022-06-01" end="2025-09-01"
+                bindchange="StartdateChange">
+                <view>
+                    {{startdate}}
+                </view>
+            </picker>
+            <picker class="starttime_time" mode="time" value="{{starttime}}" start="00:00" end="24:00"
+                bindchange="StartTimeChange">
+                <view>
+                    {{starttime}}
+                </view>
+            </picker>
+        </view>
+    </view>
+    <view class="border"></view>
+    <view class="endtime">
+        <view class="endtime_text">
+            结束时间
+        </view>
+        <view class="endtime_">
+            <picker class="endtime_date" mode="date" value="{{enddate}}" end="2022-06-01" end="2025-09-01"
+                bindchange="EnddateChange">
+                <view class="">
+                    {{enddate}}
+                </view>
+            </picker>
+            <picker class="endtime_time" mode="time" value="{{endtime}}" end="00:00" end="24:00"
+                bindchange="EndTimeChange">
+                <view class="">
+                    {{endtime}}
+                </view>
+            </picker>
+        </view>
+    </view>
+    <view class="border"></view>
+    <view class="mode">
+        <view class="mode_text">
+            活动方式
+        </view>
+        <picker class="mode_picker" bindchange="ModeChange" value="{{index1}}" range="{{mode}}">
+            {{mode[index1]}}
+        </picker>
+    </view>
+    <view class="border" wx:if="{{index1==0}}"></view>
+    <view class="address" style="height:{{addressheight}}" wx:if="{{index1==0}}">
+        <view class="address_text">
+            活动地点
+        </view>
+        <view class="address_select" wx:if="{{place==null}}" bindtap="Chooseaddress">
+            请选择活动地点
+        </view>
+        <view class="address_select2" wx:if="{{place!=null}}" bindtap="Chooseaddress">
+            {{place}}
+        </view>
+    </view>
+    <view class="border" wx:if="{{index1==0}}"></view>
+    <view class="qiandao" wx:if="{{index1==0}}">
+        <view class="qiandao_text">
+            签到范围
+        </view>
+        <picker class="qiandao_picker" bindchange="QiandaoChange" value="{{index2}}" range="{{qiandao}}">
+            {{qiandao[index2]}}米
+        </picker>
+    </view>
+    <view class="border"></view>
+    <view class="classify">
+        <view class="classify_text">
+            活动类别
+        </view>
+        <picker class="classify_picker" wx:if="{{index1==0}}" bindchange="Classify1Change" value="{{index3}}"
+            range="{{classify1}}">
+            {{classify1[index3]}}
+        </picker>
+        <picker class="classify_picker" wx:if="{{index1==1}}" bindchange="Classify2Change" value="{{index4}}"
+            range="{{classify2}}">
+            {{classify2[index4]}}
+        </picker>
+    </view>
+    <view class="border"></view>
+    <view class="content">
+        <view class="content_text">
+            活动描述
+        </view>
+        <textarea class="content_input" value="{{content}}" placeholder="请输入描述" maxlength="1000" auto-height="true"
+            bindinput="ActivityContent" bindlinechange="%{15}">
+        </textarea>
+    </view>
+    <view class="border"></view>
+    <view class="team">
+        <view class="team_text">
+            小队模式
+        </view>
+        <view class="team_switch">
+            <switch style='zoom:0.7;' checked="true" type="switch" bindchange="Teamswitch">
+            </switch>
+        </view>
+    </view>
+    <view class="border" wx:if="{{teamswitch==true}}"></view>
+    <view class="number" wx:if="{{teamswitch==true}}">
+        <view class="number_text">
+            小队数量
+        </view>
+        <input class="number_picker" type="number" value="{{teamnum}}" placeholder="小队数量" bindinput="Teamnum">
+        </input>
+    </view>
+    <view class="border" wx:if="{{teamswitch==true}}"></view>
+    <view class="number" wx:if="{{teamswitch==true}}">
+        <view class="number_text">
+            每队人数
+        </view>
+        <input class="number_picker" type="number" value="{{teampnum}}" placeholder="每队人数" bindinput="Teampnum">
+        </input>
+    </view>
+    <view class="border" wx:if="{{teamswitch==false}}"></view>
+    <view class="number" wx:if="{{teamswitch==false}}">
+        <view class="number_text">
+            活动人数
+        </view>
+        <input class="number_picker" type="number" value="{{activitynum}}" placeholder="活动人数" bindinput="Activitynum">
+        </input>
+    </view>
+    <view class="border"></view>
+    <view class="check">
+        <view class="check_text">
+            报名审核
+        </view>
+        <view class="check_switch">
+            <switch style='zoom:0.7;' checked="true" type="switch" bindchange="Checkswitch">
+            </switch>
+        </view>
+    </view>
+    <view class="border"></view>
+    <view class="UpLoadPicture">
+        <view class="UpLoadPicture_text">
+            添加图片
+        </view>
+        <view class="UpLoadPicture_" wx:if="{{picture.length==0}}">
+            <image class="UpLoadPicture_img" src="/icon/imageinput.png" mode="scaleToFill" bindtap="UpLoadPicture">
+            </image>
+        </view>
+        <view class="UpLoadPicture2_" wx:if="{{picture.length!=0}}">
+            <view class="UpLoadPicture2_item" wx:for="{{picture}}" wx:for-index="idx" wx:for-item="item">
+                <view class="UpLoadPicture2_item_">
+                    <image class="UpLoadPicture2_img" src="{{item.tempFilePath}}" mode="aspectFill">
+                    </image>
+                </view>
+
+            </view>
+        </view>
+    </view>
+</view>
+
+<view class="end">
+    <view class="save" bindtap="Savedata">
+        <view>
+            保存记录
+        </view>
+    </view>
+    <view class="yes" bindtap="UpLoadActivity">
+        <view>
+            确认发起
+        </view>
+    </view>
+</view>

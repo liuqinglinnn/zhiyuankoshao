@@ -1,0 +1,144 @@
+page {
+    background-color: rgb(245, 245, 245);
+}
+
+
+.head {
+    width : 100%;
+    height: 300rpx;
+
+
+    .body {
+        margin-left   : 20rpx;
+        height        : 100%;
+        display       : flex;
+        flex-direction: column;
+
+        .text {
+            opacity   : 0.7;
+            font-size : 30rpx;
+            margin-top: 50rpx;
+        }
+
+        .coin {
+            color      : #0cca80;
+            font-size  : 50rpx;
+            font-weight: bolder;
+        }
+
+        .other {
+            display       : flex;
+            flex-direction: row;
+            margin-top    : 20rpx;
+            align-items   : center;
+
+            .one {
+                height: 30rpx;
+                width : 30rpx;
+            }
+
+            .two {
+                margin-left: 10rpx;
+                font-size  : 30rpx;
+            }
+
+            .three {
+                margin-left: 20rpx;
+                height     : 30rpx;
+                width      : 30rpx;
+            }
+
+            .four {
+                margin-left: 10rpx;
+                font-size  : 30rpx;
+            }
+
+        }
+
+    }
+}
+
+.shop {
+    position               : fixed;
+    bottom                 : 0;
+    width                  : 100%;
+    height                 : 80%;
+    border-top-left-radius : 25rpx;
+    border-top-right-radius: 25rpx;
+    box-shadow             : 3rpx 3rpx 10rpx 2rpx #c8c3c3;
+    background-color       : rgb(250, 250, 250);
+
+    .shopscroll {
+        height: 100%;
+        width : 100%;
+
+        .fenlie {
+            display        : flex;
+            flex-direction : row;
+            justify-content: center;
+            width          : 100%;
+
+            .shopscroll_ {
+                width         : 50%;
+                display       : flex;
+                flex-direction: column;
+
+                .content {
+                    width         : 100%;
+                    display       : flex;
+                    flex-direction: column;
+
+                    .items {
+                        height          : 400rpx;
+                        margin-left     : 5.5%;
+                        width           : 89%;
+                        background-color: rgb(255, 255, 255);
+                        border-radius   : 15rpx;
+                        margin-top      : 30rpx;
+                        display         : flex;
+                        flex-direction  : column;
+                        align-items     : center;
+
+                        .ipic {
+                            width        : 80%;
+                            margin-top   : 30rpx;
+                            border-radius: 15rpx;
+                            overflow     : hidden;
+
+                            .iimg {
+                                overflow        : hidden;
+                                border-radius   : 15rpx;
+                                width           : 100%;
+                                height          : 100%;
+                                padding-bottom  : 100%;
+                                background-color: aliceblue;
+                            }
+                        }
+
+                        .iname {
+                            width          : 80%;
+                            font-size      : 30rpx;
+                            justify-content: flex-start;
+                        }
+
+                        .icost {
+                            color          : #0cca80;
+                            width          : 80%;
+                            font-size      : 30rpx;
+                            justify-content: flex-start;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+    .textend {
+        margin-top    : 50rpx;
+        width         : 100%;
+        text-align    : center;
+        opacity       : 0.5;
+        padding-bottom: 75rpx;
+    }
+}

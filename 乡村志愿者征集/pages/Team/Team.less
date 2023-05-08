@@ -1,0 +1,298 @@
+page {
+    background-color: rgb(245, 245, 245);
+}
+
+.showmap {
+    width           : 100%;
+    height          : 75rpx;
+    display         : flex;
+    flex-direction  : row;
+    align-items     : center;
+    background-color: white;
+    justify-content : center;
+    border-top      : 2rpx solid rgb(245, 245, 245);
+    border-bottom   : 2rpx solid rgb(245, 245, 245);
+
+    .showmaptext {
+        opacity  : 0.5;
+        font-size: 30rpx;
+    }
+
+}
+
+.icon {
+    width      : 30rpx;
+    height     : 30rpx;
+    margin-left: 10rpx;
+}
+
+.map {
+    width : 100%;
+    height: 400rpx;
+
+    .map_ {
+        height: 100%;
+        width : 100%;
+    }
+}
+
+.activitylist {
+    width: 100%;
+
+    .activitylistfor {
+        width           : 95%;
+        height          : 325rpx;
+        background-color: white;
+        margin-right    : 2.5%;
+        margin-left     : 2.5%;
+        margin-top      : 25rpx;
+        border-radius   : 15rpx;
+        box-shadow      : 3rpx 3rpx 8rpx 2rpx #c8c3c3;
+
+        .activitylistforitem {
+            width         : 100%;
+            height        : 100%;
+            display       : flex;
+            flex-direction: column;
+            align-items   : center;
+
+
+            .one {
+                width         : 100%;
+                height        : 200rpx;
+                display       : flex;
+                flex-direction: row;
+                align-items   : center;
+
+
+                .pic {
+                    width        : 200rpx;
+                    height       : 150rpx;
+                    margin-left  : 30rpx;
+                    border-radius: 15rpx;
+                    overflow     : hidden;
+
+                    .pic_img {
+                        width           : 210rpx;
+                        height          : 210rpx;
+                        background-color: antiquewhite;
+                    }
+                }
+
+                .nav {
+                    position: absolute;
+                    right   : 50rpx;
+                    width   : 50rpx;
+                    height  : 50rpx;
+
+                    .nav_icon {
+                        width : 50rpx;
+                        height: 50rpx;
+                    }
+                }
+
+                .detail {
+                    margin-left    : 25rpx;
+                    display        : flex;
+                    flex-direction : column;
+                    height         : 200rpx;
+                    justify-content: center;
+
+                    .head {
+                        font-size: 35rpx;
+                    }
+
+                    .other {
+                        margin-top    : 10rpx;
+                        flex-direction: column;
+                        display       : flex;
+
+                        .place {
+                            display       : flex;
+                            flex-direction: row;
+                            font-size     : 25rpx;
+                            align-items   : center;
+
+                            .placetext {
+                                opacity    : 0.7;
+                                margin-left: 15rpx;
+                            }
+                        }
+
+                        .time {
+                            margin-top    : 5rpx;
+                            display       : flex;
+                            flex-direction: row;
+                            font-size     : 25rpx;
+                            align-items   : center;
+
+                            .timetext {
+                                opacity    : 0.7;
+                                margin-left: 15rpx;
+                            }
+                        }
+
+                        .classify {
+                            margin-top    : 5rpx;
+                            display       : flex;
+                            flex-direction: row;
+                            font-size     : 25rpx;
+                            align-items   : center;
+
+                            .classifytext {
+                                opacity    : 0.7;
+                                margin-left: 15rpx;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .two {
+                width         : 100%;
+                height        : 125rpx;
+                display       : flex;
+                flex-direction: row;
+                align-items   : center;
+
+                .team_ {
+                    height        : 100%;
+                    width         : 100%;
+                    display       : flex;
+                    flex-direction: row;
+                    align-items   : center;
+
+                    .team_for {
+                        height        : 100%;
+                        width         : 90%;
+                        display       : flex;
+                        flex-direction: row;
+                        align-items   : center;
+                        margin-left   : 5%;
+                        height        : 100rpx;
+                        margin-left   : 5%;
+                        border-top    : 2rpx solid rgb(183, 183, 183);
+                        padding-top   : 10rpx;
+
+                        .team_text {
+                            font-size  : 30rpx;
+                            margin-left: 25rpx;
+                            opacity    : 0.7;
+                            width      : 140rpx;
+                        }
+
+                        .team_img {
+
+                            display       : flex;
+                            flex-direction: row;
+                            position      : relative;
+                            width         : 250rpx;
+                            height        : 70rpx;
+
+                            .team_forimg {
+                                position  : relative;
+                                width     : 50rpx;
+                                box-sizing: border-box;
+                                margin-top: -5rpx;
+
+                                .team_forimg_ {
+                                    background-color: antiquewhite;
+                                    border-radius   : 50%;
+                                    overflow        : hidden;
+                                    width           : 70rpx;
+                                    height          : 70rpx;
+                                    border          : 2rpx solid rgb(183, 183, 183);
+                                }
+                            }
+
+                            .team_forimgother {
+                                position: relative;
+                                width   : 70rpx;
+                                height  : 70rpx;
+
+                                background-color: antiquewhite;
+                                border-radius   : 50%;
+                                overflow        : hidden;
+                                border          : 2rpx solid rgb(183, 183, 183);
+                                margin-top      : -5rpx;
+                            }
+                        }
+
+                        .teambuttom {
+                            font-size       : 30rpx;
+                            height          : 75rpx;
+                            position        : absolute;
+                            right           : 50rpx;
+                            width           : 220rpx;
+                            border-radius   : 50rpx;
+                            background-color: rgb(58, 181, 74);
+                            display         : flex;
+                            flex-direction  : row;
+                            justify-content : center;
+                            align-items     : center;
+                            color           : white;
+                        }
+                    }
+
+                }
+            }
+
+        }
+
+    }
+}
+
+
+
+.acticon {
+    width : 30rpx;
+    height: 30rpx;
+}
+
+.calssify2 {
+    position        : absolute;
+    top             : 180rpx;
+    height          : auto;
+    width           : 33%;
+    margin-left     : 31%;
+    background-color: white;
+    box-shadow      : 3rpx 3rpx 8rpx 2rpx #c8c3c3;
+    border-radius   : 15rpx;
+    display         : flex;
+    flex-direction  : column;
+    justify-content : center;
+
+    .calssify2text {
+        width          : 100%;
+        text-align     : center;
+        font-size      : 30rpx;
+        justify-content: center;
+        align-items    : center;
+        margin-top     : 7.5rpx;
+        margin-bottom  : 7.5rpx;
+    }
+}
+
+.calssify3 {
+    position        : absolute;
+    top             : 180rpx;
+    height          : auto;
+    width           : 33%;
+    margin-left     : 66%;
+    background-color: white;
+    box-shadow      : 3rpx 3rpx 8rpx 2rpx #c8c3c3;
+    border-radius   : 15rpx;
+    display         : flex;
+    flex-direction  : column;
+    justify-content : center;
+
+    .calssify3text {
+        width          : 100%;
+        text-align     : center;
+        font-size      : 30rpx;
+        justify-content: center;
+        align-items    : center;
+        margin-top     : 7.5rpx;
+        margin-bottom  : 7.5rpx;
+    }
+}

@@ -1,0 +1,78 @@
+<view class="activitylist">
+    <view class="activitylistfor" wx:for="{{activity}}" wx:for-index="idx" wx:for-item="item">
+        <view class="activitylistforitem" hover-class="none" hover-stop-propagation="false">
+            <view class="one" bindtap="showdetail" data-id="{{item.id}}">
+                <view class="pic" hover-class="none" hover-stop-propagation="false">
+                    <image class="pic_img" src="{{item.picture[0]}}" mode="aspectFill">
+                    </image>
+                </view>
+                <view class="detail" hover-class="none" hover-stop-propagation="false">
+                    <view class="head" hover-class="none" hover-stop-propagation="false">
+                        {{item.head}}
+                    </view>
+                    <view class="other" hover-class="none" hover-stop-propagation="false">
+                        <view class="place">
+                            <image class="acticon" src="/icon/place.png" mode="aspectFill">
+                            </image>
+                            <view class="placetext">
+                                {{item.place}}
+                            </view>
+                        </view>
+                        <view class="time">
+                            <image class="acticon" src="/icon/time.png" mode="aspectFill">
+                            </image>
+                            <view class="timetext">
+                                {{item.starttime}}
+                            </view>
+                        </view>
+                        <view class="classify">
+                            <image class="acticon" src="/icon/classify.png" mode="aspectFill">
+                            </image>
+                            <view class="classifytext">
+                                {{item.classify1}}
+                            </view>
+                        </view>
+                    </view>
+                </view>
+                <view class="nav">
+                    <image class="nav_icon" src="/icon/arrow-right.png" mode="aspectFill">
+                    </image>
+                </view>
+            </view>
+            <view class="border">
+            </view>
+            <view class="two">
+                <view class="team_">
+                    <view class="team_for">
+                        <view class="team_text">
+                            小队成员
+                        </view>
+                        <view class="team_img">
+                            <view class="team_forimg" wx:for="{{item.team}}" wx:for-index="idx" wx:for-item="items">
+                                <image class="team_forimg_" src='{{items.headpic}}' mode='aspectFill'></image>
+                            </view>
+                            <image class="team_forimgother" src='/icon/add.png' mode='aspectFill'></image>
+                        </view>
+                        <button class="teambuttom" open-type="share"
+                            bindtap="yaoqinhaoyou" data-teamid="{{item.id}}">
+                            邀请好友
+                        </button>
+
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>
+<view class="calssify2" wx:if="{{classfiyswitch==2}}">
+    <view class="calssify2text" wx:for="{{classify2}}" wx:for-index="idx" wx:for-item="item" bindtap="shaixuan"
+        data-classify="{{item}}">
+        {{item}}
+    </view>
+</view>
+<view class="calssify3" wx:if="{{classfiyswitch==3}}">
+    <view class="calssify3text" wx:for="{{classify3}}" wx:for-index="idx" wx:for-item="item" bindtap="shaixuan"
+        data-classify="{{item}}">
+        {{item}}
+    </view>
+</view>

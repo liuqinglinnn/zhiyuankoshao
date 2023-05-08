@@ -1,0 +1,79 @@
+page {
+    background-color: rgb(245, 245, 245);
+}
+
+.chat {
+    width           : 100%;
+    background-color: white;
+
+    .chatfor {
+        width         : 95%;
+        height        : 150rpx;
+        margin-left   : 2.5%;
+        margin-right  : 2.5%;
+        display       : flex;
+        flex-direction: row;
+        border-top    : 2rpx solid rgb(245, 245, 245);
+        border-bottom : 2rpx solid rgb(245, 245, 245);
+
+        .ueserpic {
+            margin-top      : 25rpx;
+            width           : 100rpx;
+            height          : 100rpx;
+            background-color: antiquewhite;
+            border-radius   : 50%;
+            overflow        : hidden;
+
+            .ueserpic_img {
+                width : 100rpx;
+                height: 100rpx;
+            }
+        }
+
+        .num {
+            position        : absolute;
+            width           : 40rpx;
+            height          : 40rpx;
+            background-color: red;
+            color           : white;
+            left            : 95rpx;
+            margin-top      : 15rpx;
+            border-radius   : 50%;
+            text-align      : center;
+            font-size       : 25rpx;
+        }
+
+        .base {
+            display        : flex;
+            flex-direction : column;
+            margin-left    : 25rpx;
+            justify-content: center;
+            height         : 100%;
+
+            .basename {
+                font-size: 35rpx;
+            }
+
+            .basecontent {
+                font-size: 30rpx;
+                opacity  : 0.5;
+            }
+        }
+
+        .time {
+            position  : absolute;
+            right     : 20rpx;
+            margin-top: 20rpx;
+            font-size : 30rpx;
+            opacity   : 0.5;
+        }
+    }
+}
+
+.end {
+    width     : 100%;
+    opacity   : 0.5;
+    text-align: center;
+    font-size : 30rpx;
+    margin-top: 25rpx;
+}

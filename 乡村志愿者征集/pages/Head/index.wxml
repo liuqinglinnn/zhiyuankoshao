@@ -1,0 +1,100 @@
+<swiper class="swiper" indicator-dots="true" indicator-color="rgba(0,0,0,.3)" autoplay="true" current="0"
+    current-item-id="" interval="5000" duration="1000" circular="true">
+    <block wx:for="{{pictures}}" wx:for-index="idx">
+        <swiper-item>
+            <image src="{{item}}" class="swiperimg"></image>
+        </swiper-item>
+    </block>
+</swiper>
+<view class="body">
+    <view class="user">
+        <view class="userpicture" bindtap="level">
+            <image class="userpicture_image" src="{{userInfo.userpicture}}" mode="aspectFill">
+            </image>
+        </view>
+        <view class="user_">
+            <view class="uesrbase" bindtap="level">
+                <view class="username">
+                    {{userInfo.username}}
+                </view>
+                <view class="userlevel">
+                    Lv {{userInfo.userlevel}}
+                </view>
+            </view>
+            <view class="progress" bindtap="level">
+                <progress percent="0" active stroke-width="3" />
+            </view>
+            <view class="address" bindtap="address">
+                <view class="address_icon">
+                    <image class="address_icon_image" src="/icon/dingwei.png" mode="aspectFill">
+                    </image>
+                </view>
+                <view class="address_text">
+                    {{userInfo.useraddress}}
+                </view>
+            </view>
+        </view>
+        <view class="border" bindtap="level">
+        </view>
+        <view class="oth" bindtap="level">
+            <image class="oth_image" src="/icon/koshao2.png" mode="aspectFill">
+            </image>
+        </view>
+    </view>
+    <view class="bodymain">
+        <view class="zhaomu" bindtap="enter">
+            <image class="zhaomu_img" src="/icon/zhaomu.png" mode="aspectFill">
+            </image>
+            <view class="zhaomu_tx1">
+                活动招募
+            </view>
+            <view class="zhaomu_tx2">
+                查看正在招募的活动
+            </view>
+        </view>
+        <view class="border"></view>
+        <view class="team" bindtap="team">
+            <image class="team_img" src="/icon/xiaodui.png" mode="aspectFill">
+            </image>
+            <view class="team_tx1">
+                志愿小队
+            </view>
+            <view class="team_tx2">
+                查看已加入的志愿队伍
+            </view>
+        </view>
+    </view>
+    <view class="bodyother">
+        <view class="huodong" bindtap="myactivity">
+            <view class="huodong_t">
+                <view class="huodong_tx1">
+                    活动签到
+                </view>
+                <view class="huodong_tx2">
+                    查看报名的活动
+                </view>
+            </view>
+            <image class="huodong_img" src="/icon/qiandao.png" mode="aspectFill">
+            </image>
+        </view>
+        <view class="border2">
+
+        </view>
+        <view class="shop" bindtap="shoplist">
+            <view class="shop_t">
+                <view class="shop_tx1">
+                    公益商城
+                </view>
+                <view class="shop_tx2">
+                    查看公益商城
+                </view>
+            </view>
+            <image class="shop_img" src="/icon/shangcheng.png" mode="aspectFill">
+            </image>
+        </view>
+    </view>
+    <view class="logo">
+        <image class="logo_img" src="/icon/zhiyuankoshao.jpg" mode="aspectFit">
+        </image>
+    </view>
+</view>

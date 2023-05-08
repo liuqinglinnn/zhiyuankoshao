@@ -1,0 +1,81 @@
+<view class="map" wx:if="{{showmap%2==0}}">
+    <map id="map" class="map_" longitude="{{longitude}}" latitude=" {{latitude}}" markers="{{markers}}" scale="14"
+        polyline="{{polyline}}" show-location bindregionchange="bindregionchange" bindtap="bindtapMap"
+        bindmarkertap="markertap"></map>
+</view>
+<view class="showmap" bindtap="showmap" wx:if="{{showmap%2==0}}">
+    <view class="showmaptext">
+        收起地图
+    </view>
+    <image class="icon" src="/icon/arrow-up.png" style="opacity:0.5;" mode="aspectFill">
+    </image>
+</view>
+<view class="showmap" bindtap="showmap" wx:if="{{showmap%2!=0}}">
+    <view class="showmaptext">
+        展开地图
+    </view>
+    <image class="icon" src="/icon/arrow-down.png" style="opacity:0.5;" mode="aspectFill">
+    </image>
+</view>
+<view class="activitylist">
+    <view class="activitylistfor" wx:for="{{activity}}" wx:for-index="idx" wx:for-item="item">
+        <view class="activitylistforitem" hover-class="none" hover-stop-propagation="false" bindtap="showdetail"
+            data-id="{{item.id}}">
+            <view class="pic" hover-class="none" hover-stop-propagation="false">
+                <image class="pic_img" src="{{item.picture[0]}}" mode="aspectFill">
+                </image>
+            </view>
+            <view class="detail" hover-class="none" hover-stop-propagation="false">
+                <view class="head" hover-class="none" hover-stop-propagation="false">
+                    {{item.head}}
+                </view>
+                <view class="other" hover-class="none" hover-stop-propagation="false">
+                    <view class="place">
+                        <image class="acticon" src="/icon/place.png" mode="aspectFill">
+                        </image>
+                        <view class="placetext">
+                            {{item.place}}
+                        </view>
+                    </view>
+                    <view class="time">
+                        <image class="acticon" src="/icon/time.png" mode="aspectFill">
+                        </image>
+                        <view class="timetext">
+                            {{item.starttime}}
+                        </view>
+                    </view>
+                    <view class="num">
+                        <image class="acticon" src="/icon/people.png" mode="aspectFill">
+                        </image>
+                        <view class="numtext">
+                            {{item.asginnum}}/{{item.allnum}}人
+                        </view>
+                    </view>
+                    <view class="classify">
+                        <image class="acticon" src="/icon/classify.png" mode="aspectFill">
+                        </image>
+                        <view class="classifytext">
+                            {{item.classify1}}
+                        </view>
+                    </view>
+                </view>
+            </view>
+            <view class="nav">
+                <image class="nav_icon" src="/icon/arrow-right.png" mode="aspectFill">
+                </image>
+            </view>
+        </view>
+    </view>
+</view>
+<view class="calssify2" wx:if="{{classfiyswitch==2}}">
+    <view class="calssify2text" wx:for="{{classify2}}" wx:for-index="idx" wx:for-item="item" bindtap="shaixuan"
+        data-classify="{{item}}">
+        {{item}}
+    </view>
+</view>
+<view class="calssify3" wx:if="{{classfiyswitch==3}}">
+    <view class="calssify3text" wx:for="{{classify3}}" wx:for-index="idx" wx:for-item="item" bindtap="shaixuan"
+        data-classify="{{item}}">
+        {{item}}
+    </view>
+</view>

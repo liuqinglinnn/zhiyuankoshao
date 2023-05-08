@@ -1,0 +1,297 @@
+page {
+  background-color: #f5f5f5;
+}
+.biankuang {
+  margin-top: 25rpx;
+  width: 90%;
+  border-radius: 15rpx;
+  margin-left: 5%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+.biankuang .border {
+  width: 95%;
+  background-color: #f5f5f5;
+  height: 3rpx;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+}
+.biankuang .title {
+  margin-top: 10rpx;
+  height: 75rpx;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.biankuang .title .title_text {
+  margin-left: 25rpx;
+}
+.biankuang .title .title_input {
+  margin-left: 200rpx;
+  width: 300rpx;
+}
+.biankuang .starttime {
+  margin-top: 10rpx;
+  height: 75rpx;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.biankuang .starttime .starttime_text {
+  margin-left: 25rpx;
+}
+.biankuang .starttime .starttime_ {
+  height: 30rpx;
+  margin-left: 200rpx;
+  width: 315rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.biankuang .starttime .starttime_ .starttime_time {
+  margin-left: 15rpx;
+}
+.biankuang .endtime {
+  margin-top: 1rpx;
+  height: 75rpx;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.biankuang .endtime .endtime_text {
+  margin-left: 25rpx;
+}
+.biankuang .endtime .endtime_ {
+  height: 30rpx;
+  margin-left: 200rpx;
+  width: 315rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.biankuang .endtime .endtime_ .endtime_time {
+  margin-left: 15rpx;
+}
+.biankuang .address {
+  margin-top: 10rpx;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.biankuang .address .address_text {
+  margin-left: 25rpx;
+}
+.biankuang .address .address_select {
+  margin-left: 200rpx;
+  width: 300rpx;
+  color: #808080;
+}
+.biankuang .address .address_select2 {
+  height: auto;
+  margin-left: 200rpx;
+  width: 300rpx;
+  color: #808080;
+}
+.biankuang .mode {
+  margin-top: 10rpx;
+  height: 75rpx;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.biankuang .mode .mode_text {
+  margin-left: 25rpx;
+}
+.biankuang .mode .mode_picker {
+  margin-left: 200rpx;
+  width: 300rpx;
+}
+.biankuang .qiandao {
+  margin-top: 10rpx;
+  height: 75rpx;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.biankuang .qiandao .qiandao_text {
+  margin-left: 25rpx;
+}
+.biankuang .qiandao .qiandao_picker {
+  margin-left: 200rpx;
+  width: 300rpx;
+}
+.biankuang .classify {
+  margin-top: 10rpx;
+  height: 75rpx;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.biankuang .classify .classify_text {
+  margin-left: 25rpx;
+}
+.biankuang .classify .classify_picker {
+  margin-left: 200rpx;
+  width: 300rpx;
+}
+.biankuang .number {
+  margin-top: 10rpx;
+  height: 75rpx;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.biankuang .number .number_text {
+  margin-left: 25rpx;
+}
+.biankuang .number .number_picker {
+  margin-left: 200rpx;
+  width: 300rpx;
+}
+.biankuang .content {
+  margin-top: 10rpx;
+  height: 350rpx;
+  width: 100%;
+  background-color: white;
+}
+.biankuang .content .content_text {
+  padding-top: 20rpx;
+  margin-left: 25rpx;
+}
+.biankuang .content .content_input {
+  margin-top: 25rpx;
+  margin-left: 25rpx;
+}
+.biankuang .team {
+  margin-top: 10rpx;
+  height: 75rpx;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.biankuang .team .team_text {
+  margin-left: 25rpx;
+}
+.biankuang .team .team_switch {
+  margin-left: 200rpx;
+  width: 300rpx;
+  height: 25rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.biankuang .check {
+  margin-top: 2rpx;
+  height: 75rpx;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.biankuang .check .check_text {
+  margin-left: 25rpx;
+}
+.biankuang .check .check_switch {
+  margin-left: 200rpx;
+  width: 300rpx;
+  height: 25rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.biankuang .UpLoadPicture {
+  margin-top: 5rpx;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.biankuang .UpLoadPicture .UpLoadPicture_text {
+  margin-top: 25rpx;
+  margin-left: 25rpx;
+}
+.biankuang .UpLoadPicture .UpLoadPicture_ {
+  height: 250rpx;
+  width: 250rpx;
+  background-color: #f5f5f5;
+  margin-top: 25rpx;
+  margin-left: 25rpx;
+  margin-bottom: 25rpx;
+  border-radius: 15rpx;
+  overflow: hidden;
+}
+.biankuang .UpLoadPicture .UpLoadPicture_ .UpLoadPicture_img {
+  width: 250rpx;
+  height: 250rpx;
+}
+.biankuang .UpLoadPicture .UpLoadPicture2_ {
+  height: auto;
+  width: 100%;
+  margin-top: 25rpx;
+  margin-bottom: 35rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.biankuang .UpLoadPicture .UpLoadPicture2_ .UpLoadPicture2_item .UpLoadPicture2_item_ {
+  height: 300rpx;
+  width: 400rpx;
+  margin-top: 10rpx;
+  margin-bottom: 10rpx;
+}
+.biankuang .UpLoadPicture .UpLoadPicture2_ .UpLoadPicture2_item .UpLoadPicture2_item_ .UpLoadPicture2_img {
+  height: 300rpx;
+  width: 400rpx;
+}
+.end {
+  height: 100rpx;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30rpx;
+  padding-bottom: 150rpx;
+}
+.end .save {
+  width: 275rpx;
+  height: 75rpx;
+  background-color: #6c99be;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30rpx;
+  color: white;
+  margin-right: 10rpx;
+}
+.end .yes {
+  width: 275rpx;
+  height: 75rpx;
+  background-color: #0cca80;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30rpx;
+  color: white;
+  margin-left: 10rpx;
+}

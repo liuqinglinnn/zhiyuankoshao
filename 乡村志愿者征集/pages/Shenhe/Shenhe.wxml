@@ -1,0 +1,10 @@
+<!-- <image class="" src="{{url}}" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="">
+
+</image>
+
+<button bindtap="UpLoadPicture">
+    上传图片
+</button> -->
+<view class="shenhe" hover-class="none" hover-stop-propagation="false">
+    无审核记录
+</view>

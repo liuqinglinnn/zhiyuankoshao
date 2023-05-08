@@ -1,0 +1,10 @@
+page {
+  background-color: #f5f5f5;
+}
+.shenhe {
+  text-align: center;
+  width: 100%;
+  font-size: 30rpx;
+  opacity: 0.5;
+  margin-top: 20rpx;
+}

@@ -1,0 +1,7 @@
+{
+  "enablePullDownRefresh": true,
+  "backgroundColor": "#0cca80",
+  "navigationBarTitleText": "报名审核",
+  "navigationBarBackgroundColor": "#0cca80",
+  "navigationBarTextStyle": "white"
+}

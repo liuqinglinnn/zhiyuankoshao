@@ -1,0 +1,74 @@
+<view class="" hover-class="none" hover-stop-propagation="false">
+    志愿口哨小程序隐私保护说明
+</view>
+<view class="" hover-class="none" hover-stop-propagation="false">
+    本指引是志愿口哨小程序开发者（以下简称“开发者”）为处理你的个人信息而制定。
+</view>
+<view class="" hover-class="none" hover-stop-propagation="false">
+    1开发者处理的信息
+
+</view>
+<view class="" hover-class="none" hover-stop-propagation="false">
+    根据法律规定，开发者仅处理实现小程序功能所必要的信息。
+
+    为了注册、登录小程序，开发者收集你的用户信息（微信昵称、头像、性别、地区）。
+    开发者收集你的手机号码，用于网约车司机与你取得联系。
+    开发者收集你的身份证号码，用于法律实名制要求，为你提供车票购买服务。
+</view>
+<view class="" hover-class="none" hover-stop-propagation="false">
+    2第三方插件信息/SDK信息
+</view>
+<view class="" hover-class="none" hover-stop-propagation="false">
+    为实现特定功能，开发者可能会接入由第三方提供的插件/SDK。第三方插件/SDK的个人信息处理规则，请以其公示的官方说明为准。
+    志愿口哨小程序接入的第三方插件信息/SDK信息如下：
+    第三方插件信息
+    插件名称：无
+    插件提供方名称: 无
+    为了注册、登录小程序，开发者收集你的用户信息（微信昵称、头像、性别、地区）。
+    开发者收集你的手机号码，用于网约车司机与你取得联系。
+    开发者收集你的身份证号码，用于法律实名制要求，为你提供车票购买服务。
+    第三方SDK信息
+    SDK名称: 无
+    SDK提供方名称:无
+    为了注册、登录小程序，开发者收集你的用户信息（微信昵称、头像、性别、地区）。
+    开发者收集你的手机号码，用于网约车司机与你取得联系。
+    开发者收集你的身份证号码，用于法律实名制要求，为你提供车票购买服务。
+</view>
+<view class="" hover-class="none" hover-stop-propagation="false">
+    3你的权益
+</view>
+<view class="" hover-class="none" hover-stop-propagation="false">
+    开发者承诺，除法律法规另有规定外，开发者对你的信息的保存期限应当为实现处理目的所必要的最短时间。
+    你可以通过以下路径：小程序主页右上角“…”—“设置”—点击特定信息—点击“不允许”，撤回对开发者的授权。
+    关于你的个人信息，你可以通过以下方式与开发者联系，行使查阅、复制、更正、删除等法定权利。
+    邮箱：572702851@qq.com
+</view>
+
+<view class="" hover-class="none" hover-stop-propagation="false">
+    4开发者对信息的存储
+</view>
+<view class="" hover-class="none" hover-stop-propagation="false">
+    开发者承诺，除法律法规另有规定外，开发者对你的信息的保存期限应当为实现处理目的所必要的最短时间。
+</view>
+
+<view class="" hover-class="none" hover-stop-propagation="false">
+    5信息的使用规则
+</view>
+<view class="" hover-class="none" hover-stop-propagation="false">
+    开发者将会在本指引所明示的用途内使用收集的信息
+
+    如开发者使用你的信息超出本指引目的或合理范围，开发者必须在变更使用目的或范围前，再次以邮箱方式告知并征得你的明示同意。
+</view>
+<view class="" hover-class="none" hover-stop-propagation="false">
+    6信息对外提供
+</view>
+<view class="" hover-class="none" hover-stop-propagation="false">
+    开发者承诺，不会主动共享或转让你的信息至任何第三方，如存在确需共享或转让时，开发者应当直接征得或确认第三方征得你的单独同意。
+    开发者承诺，不会对外公开披露你的信息，如必须公开披露时，开发者应当向你告知公开披露的目的、披露信息的类型及可能涉及的信息，并征得你的单独同意。
+</view>
+<view class="" hover-class="none" hover-stop-propagation="false">
+    你认为开发者未遵守上述约定，或有其他的投诉建议、或未成年人个人信息保护相关问题，可通过以下方式与开发者联系；或者向微信进行投诉。
+</view>
+<view class="" hover-class="none" hover-stop-propagation="false">
+    邮箱：572702851@qq.com
+</view>

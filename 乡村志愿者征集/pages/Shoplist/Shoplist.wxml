@@ -1,0 +1,50 @@
+<view class="head">
+    <view class="body">
+        <view class="text">
+            当前志愿币
+        </view>
+        <view class="coin">
+            {{coin}}
+        </view>
+        <view class="other">
+            <image class="one" src="/icon/jilu.png" mode="aspectFill">
+            </image>
+            <view class="two" bindtap="jilu">
+                志愿币记录
+            </view>
+            <image class="three" src="/icon/gonglue.png" mode="aspectFill">
+            </image>
+            <view class="four" bindtap="gonglue">
+                志愿币攻略
+            </view>
+        </view>
+    </view>
+
+</view>
+<view class="shop">
+    <scroll-view class="shopscroll" enable-flex="true" scroll-y="true">
+        <view class="fenlie">
+            <view class="shopscroll_" wx:for="{{2}}" wx:for-item='item' wx:for-index="indextwo">
+                <view class="content" wx:if="{{indexs%2==indextwo}}" wx:for='{{goods}}' wx:for-item='items'
+                    wx:for-index="indexs" bindtap="buy" data-item="{{items.coin}}">
+                    <view class="items">
+                        <view class="ipic">
+                            <image class="iimg" src="{{pictures[items.i]}}" mode="aspectFill">
+                            </image>
+                        </view>
+                        <view class="iname">
+                            {{items.name}}
+                        </view>
+                        <view class="icost">
+                            {{items.coin}} 志愿币
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+
+        <view class="textend" hover-class="none" hover-stop-propagation="false">
+            更多惊喜，敬请期待
+        </view>
+    </scroll-view>
+</view>
